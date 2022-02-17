@@ -100,7 +100,7 @@ class _HomeState extends State<Home> {
                             Text(viewModel.subwayInfos[index].trainLineNm),
                             Text(viewModel.subwayInfos[index].arvlMsg3),
                             Text(
-                                '약 ${viewModel.subwayInfos[index].barvlDt}분 후 도착예정'),
+                                '약 ${viewModel.subwayInfos[index].barvlMin}분 후 도착예정'),
                             Text(viewModel.subwayInfos[index].arvlCd),
                             Text(viewModel.subwayInfos[index].bstatnNm),
                             Text(viewModel.subwayInfos[index].subwayHeading),

@@ -14,20 +14,16 @@ class InfoData {
     required this.barvlMin,
   });
 
-  late final String updnLine;
-  late final String trainLineNm;
-  late final String subwayHeading;
-  late final String statnNm;
-  late final String bstatnNm;
-  late final String recptnDt;
-  late final String arvlMsg2;
-  late final String arvlMsg3;
-  late final String arvlCd;
-  late final String barvlMin;
-
-  // 분으로 이름 변경.
-
-  // InfoData();
+  late String updnLine;
+  late String trainLineNm;
+  late String subwayHeading;
+  late String statnNm;
+  late String bstatnNm;
+  late String recptnDt;
+  late String arvlMsg2;
+  late String arvlMsg3;
+  late String arvlCd;
+  late String barvlMin;
 
   factory InfoData.fromInfo(Info info) {
     return InfoData(
@@ -46,15 +42,16 @@ class InfoData {
 
   Info toInfo() {
     return Info(
-        updnLine: updnLine,
-        trainLineNm: trainLineNm,
-        subwayHeading: subwayHeading,
-        statnNm: statnNm,
-        bstatnNm: bstatnNm,
-        recptnDt: recptnDt,
-        arvlMsg2: arvlMsg2,
-        arvlMsg3: arvlMsg3,
-        arvlCd: arvlCd,
-        barvlDt: barvlMin);
+      updnLine: updnLine,
+      trainLineNm: trainLineNm,
+      subwayHeading: subwayHeading,
+      statnNm: statnNm,
+      bstatnNm: bstatnNm,
+      recptnDt: recptnDt,
+      arvlMsg2: arvlMsg2,
+      arvlMsg3: arvlMsg3,
+      arvlCd: arvlCd,
+      barvlDt: barvlMin,
+    );
   }
 }

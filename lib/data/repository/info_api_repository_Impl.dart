@@ -12,13 +12,5 @@ class InfoApiRepositoryImpl implements InfoApiRepository {
     final Iterable result = await api.fetch(query);
 
     return result.map((e) => Info.fromJson(e)).toList();
-    // return result.when(
-    //   success: (iterable) {
-    //     return Result.success(iterable.map((e) => Photo.fromJson(e)).toList());
-    //   },
-    //   error: (message) {
-    //     return Result.error(message);
-    //   },
-    // );
   }
 }
