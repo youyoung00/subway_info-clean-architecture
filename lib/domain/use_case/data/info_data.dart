@@ -26,6 +26,9 @@ class InfoData {
   late String barvlMin;
 
   factory InfoData.fromInfo(Info info) {
+    final minutes =
+        Duration(seconds: int.parse(info.barvlDt)).inMinutes.toString();
+
     return InfoData(
       trainLineNm: info.trainLineNm,
       recptnDt: info.recptnDt,
@@ -34,7 +37,7 @@ class InfoData {
       arvlCd: info.arvlCd,
       arvlMsg3: info.arvlMsg3,
       updnLine: info.updnLine,
-      barvlMin: info.barvlDt,
+      barvlMin: minutes,
       arvlMsg2: info.arvlMsg2,
       subwayHeading: info.subwayHeading,
     );

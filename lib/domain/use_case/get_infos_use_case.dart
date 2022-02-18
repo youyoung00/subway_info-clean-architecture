@@ -12,12 +12,6 @@ class GetInfosUseCase {
 
     final infoDataList = result.map((e) => InfoData.fromInfo(e)).toList();
 
-    // for (int i = 0; i < infoDataList.length; i++) {
-    //   var reFormatList = int.parse(infoDataList[i].barvlMin);
-    //   infoDataList[i].barvlMin =
-    //       Duration(milliseconds: reFormatList).inMinutes.toString();
-    // }
-
     return infoDataList;
   }
 }
