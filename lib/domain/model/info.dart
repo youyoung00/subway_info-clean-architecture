@@ -1,3 +1,26 @@
+// import 'package:freezed_annotation/freezed_annotation.dart';
+//
+// part 'info.freezed.dart';
+// part 'info.g.dart';
+//
+// @freezed
+// class Info with _$Info {
+//   factory Info({
+//     required String updnLine,
+//     required String trainLineNm,
+//     required String subwayHeading,
+//     required String statnNm,
+//     required String bstatnNm,
+//     required String recptnDt,
+//     required String arvlMsg2,
+//     required String arvlMsg3,
+//     required String arvlCd,
+//     required String barvlDt,
+//   }) = _Info;
+//
+//   factory Info.fromJson(Map<String, dynamic> json) => _$InfoFromJson(json);
+// }
+
 class Info {
   Info({
     required this.updnLine,

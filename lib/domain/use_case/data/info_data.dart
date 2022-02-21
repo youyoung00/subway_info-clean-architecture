@@ -1,4 +1,4 @@
-import 'package:subway/domain/model/Info.dart';
+import 'package:subway/domain/model/info.dart';
 
 class InfoData {
   InfoData({

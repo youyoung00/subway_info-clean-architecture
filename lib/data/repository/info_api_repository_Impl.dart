@@ -1,4 +1,4 @@
-import '../../domain/model/Info.dart';
+import '../../domain/model/info.dart';
 import '../../domain/repository/info_api_repository.dart';
 import '../dara_source/subway_api.dart';
 
